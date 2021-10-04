@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js\jquery.min.js"></script>
+		<script type="text/javascript" src="js\sha1.js"></script>
+  <script>
+/**
+ * 加密（需要先加载lib/aes/aes.min.js文件）
+ * @param word
+ * @returns {*}
+ */
+function encrypt(word){
+    return CryptoJS.SHA1(word).toString();;
+}
+
+
+        </script>
+		
+		        <script>
+             //加密
+            function encryptStr() {
+                    var strMsg = $.trim($('#text1').val());
+                    $('#text2').val(encrypt(strMsg));
+                }
+
+        </script>
+    </head>
+    <body>
+        <h1>JS׃sha1-demo</h1>
+    
+        <div>
+            <textarea id="text1" placeholder="原文" style="width:300px;"></textarea>        
+        </div>
+        <div>
+            <input type="button" value="加密" onclick="encryptStr();" />            
+            <textarea id="text2" placeholder="加密结果" style="width:300px;"></textarea>
+        </div>
+        
+    </body>
+</html>
