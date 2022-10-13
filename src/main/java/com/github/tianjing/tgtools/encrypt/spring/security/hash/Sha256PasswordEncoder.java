@@ -1,7 +1,7 @@
 package com.github.tianjing.tgtools.encrypt.spring.security.hash;
 
 
-import com.github.tianjing.tgtools.encrypt.hash.Sha1Encrypter;
+import com.github.tianjing.tgtools.encrypt.hash.Sha256Encrypter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
@@ -9,6 +9,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * @create 2019-09-01 18:29
  * @desc
  **/
-public class Sha256PasswordEncoder extends Sha1Encrypter implements PasswordEncoder {
+public class Sha256PasswordEncoder extends Sha256Encrypter implements PasswordEncoder {
 
 }
