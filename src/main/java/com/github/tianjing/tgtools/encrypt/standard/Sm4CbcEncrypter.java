@@ -17,7 +17,7 @@ public class Sm4CbcEncrypter implements Encrypter {
 
     protected String key = "";
     protected SM4Utils sm4 = new SM4Utils();
-    protected String iv = "@tianjing123$";
+    protected String iv = "@tianjing123456$";
 
     @Override
     public String getKey() {

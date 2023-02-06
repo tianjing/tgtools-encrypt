@@ -15,7 +15,7 @@
             var sKey=strKey;
             var sm4 = new sm4utils(sKey);
             var data = strMsg;
-            sm4.iv = "@tianjing123$";
+            sm4.iv = "@tianjing123456$";
             var endata = sm4.encryptData_CBC(data);
 
             $('#text2').val(endata);
@@ -29,7 +29,7 @@
             var sKey=strKey;
             var sm4 = new sm4utils(sKey);
             var data = ciphertext;
-            sm4.iv = "@tianjing123$";
+            sm4.iv = "@tianjing123456$";
             var dedata = sm4.decryptData_CBC(data);
 
             $('#text3').val(dedata);
